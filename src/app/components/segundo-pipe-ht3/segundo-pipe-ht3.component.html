@@ -1,0 +1,18 @@
+<div class="cajaSegundaSerie">
+  <h1>Pipe No. 2</h1>
+
+  <div id="input">
+      <h3>Input</h3>
+      <input type="text" [(ngModel)]='dato' #userInput><br>
+      <br><button type="submit" (click)=enviarDatos()>Enviar</button>
+  </div>
+  <div id="output">
+    <h3 id="titulos">Input:</h3>
+    <p #titulo id="titulos"></p>
+    <h3 id="titulos">Output:</h3>
+    <p #salida id="salida">{{dato2 | segundaSerie }}</p>
+  </div>
+
+</div>
+
+<br><button [routerLink]="['/menu']">Back </button>
